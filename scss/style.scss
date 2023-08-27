@@ -9,7 +9,7 @@
 * {
   padding: 0;
   margin: 0;
-  bottom: 0;
+  border: 0;
 
   &::after,
   &::before {
@@ -21,6 +21,7 @@ html,
 body {
   height: 100%;
   min-width: 20rem;
+  line-height: 1;
 }
 
 a {
@@ -40,6 +41,15 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+
+button {
+  line-height: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  color: inherit;
+  background-color: transparent;
+}
 // ==============================================//
 
 // default style
@@ -56,16 +66,12 @@ body {
   padding-right: 0.9375rem;
   margin: 0 auto;
 }
+
 .wrapper {
   min-height: 100%;
   overflow: clip;
-
   display: flex;
   flex-direction: column;
-  
-  .page {
-    flex: 1 1 auto;
-  }
 }
 
 // Module
@@ -78,3 +84,16 @@ body {
 .title--dark {
   color: #222F33
 }
+
+// general styles
+.page {
+  flex: 1 1 auto;
+}
+
+.page__main {
+
+}
+
+//==========================================================//
+
+// Ended 54min
